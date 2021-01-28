@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./main.js"></script>
+  <script src="//at.alicdn.com/t/font_2353440_vhikol1jow.js"></script>
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./normalize.css">
@@ -14,11 +15,10 @@
 <body>
   <!-- 最外部容器 -->
   <div class="bodycontainer">
-
     <!-- 顶部导航栏 -->
     <div class="topBarcontainer">
-      <!-- 左边部分 -->
       <div class="topbarItem">
+        <!-- 左边部分 -->
         <div class="left">
           <div class="leftitem"><a href="javascript:;">小米商城</a></div>
           <div class="leftitem"><a href="javascript:;">MIUI</a></div>
@@ -30,9 +30,15 @@
           <div class="leftitem"><a href="javascript:;">企业团购</a></div>
           <div class="leftitem"><a href="javascript:;">资质证照</a></div>
           <div class="leftitem"><a href="javascript:;">协议规则</a></div>
-          <div class="leftitem download"><a href="javascript:;">下载app
-            <div class="downloadimg"><img src="./img/download.png" alt=""><p>小米商城App</p></div>
-          </a></div>
+          <div class="leftitem download">
+            <a href="javascript:;">下载app
+              <div class="downloadimg">
+                <div>
+                  <img src="./img/download.png" alt="">
+                  <p>小米商城App</p>
+                </div>
+              </div>
+            </a></div>
           <div class="leftitem"><a href="javascript:;">智能生活</a></div>
           <div class="leftitem"><a href="javascript:;">Select Location</a></div>
 
@@ -42,12 +48,23 @@
           <div class="rightitem"><a href="javascript:;">登录</a></div>
           <div class="rightitem"><a href="javascript:;">注册</a></div>
           <div class="rightitem"><a href="javascript:;">消息通知</a></div>
-          <div class="rightitem shoppingcar"><a href="javascript:;">购物车</a></div>
+          <div class="shoppingcar">
+            <div class="caricon">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-gouwuche"></use>
+              </svg>
+            </div>
+            <div class="context">
+              <a href="javascript:;">购物车(0)</a>
+            </div>
+
+            <div class="car-menu">
+              购物车中还没有商品，赶紧选购吧！
+            </div>
+          </div>
 
         </div>
       </div>
-
-
     </div>
 
 

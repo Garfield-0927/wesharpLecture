@@ -195,13 +195,13 @@
 .navi-icon{
   width: 55px;
   height: 55px;
-  margin: 0;
-  padding: 0;
   transition: all .3s;
 }
 .navi-icon-wrapper:hover .navi-icon{
   transform: translateX(-55px)
 }
+
+
 
 /* 中间分类 */
 .category-wrapper{
@@ -271,7 +271,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 99;
+  background-color: #fff;
+  z-index: 9999;
 }
 .category-wrapper .category:hover .navi-bar-slide-down-container{
   height: 230px;
@@ -301,4 +302,121 @@
   line-height: 40px;
   color: #ff6700;
   text-align: center;
+}
+
+/* 轮播图部分 */
+.swiper-container{
+  width: 1226px;
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 左边列表 */
+.swiper-container .list-wrapper{
+  position: absolute;
+  width: 234px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:rgba(105,101,101,.6);
+  z-index: 999;
+}
+.swiper-container .list-wrapper .listitem{
+  width: 234px;
+  height: 42px;
+  line-height: 42px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  cursor: pointer;
+}
+.swiper-container .list-wrapper .listitem a{
+  color: #fff;
+}
+.swiper-container .list-wrapper .listitem:hover{
+  background-color: #ff6700;
+}
+
+/* 列表详情 */
+.swiper-container .list-wrapper .listitem .list-detail{
+  position: absolute;
+  top: 0;
+  left: 234px;
+  width: calc(1226px - 234px);
+  height: 459px;
+  display: none;
+  z-index: 999;
+}
+.swiper-container .list-wrapper .listitem:hover .list-detail{
+  display: block;
+  border: 1px solid #e0e0e0;
+  border-left: 0;
+  background: #fff;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
+}
+.swiper-container .list-wrapper .listitem .list-detail .list-detail-item{
+  height: 40px;
+  margin: 20px 18px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container .list-wrapper .listitem .list-detail .list-detail-item img{
+  height: 40px;
+}
+.swiper-container .list-wrapper .listitem .list-detail .list-detail-item .desc{
+  color: #000000;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+/* 轮播图 */
+.swiper-img-wrapper{
+  height: 460px;
+  width: 1226px;
+  white-space: nowrap;
+  z-index: 99;
+  position: relative;
+}
+.swiper-img-wrapper .swiperimg{
+  position: absolute;
+  transition: all .5s;
+  opacity: 0;
+}
+.swiper-img-wrapper .swiperimg img{
+  height: 460px;
+  width: 1226px;
+}
+
+
+/* 轮播图分页器 */
+.swiper-index-wrapper{
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  right: 40px;
+  bottom: 20px;
+  z-index: 9999;
+}
+.swiper-index-wrapper .index{
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.4);
+  border: 2px solid rgb(87, 87, 87);
+  width: 5px;
+  height: 5px;
+}
+.swiper-index-wrapper .active{
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #b0b0b0;
+  border: 2px solid rgba(0,0,0,.4);
 }

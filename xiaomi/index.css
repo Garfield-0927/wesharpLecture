@@ -348,7 +348,7 @@
   width: calc(1226px - 234px);
   height: 459px;
   display: none;
-  z-index: 999;
+  z-index: 10000;
 }
 .swiper-container .list-wrapper .listitem:hover .list-detail{
   display: block;
@@ -404,7 +404,7 @@
   align-items: center;
   right: 40px;
   bottom: 20px;
-  z-index: 9999;
+  z-index: 99;
 }
 .swiper-index-wrapper .index{
   border-radius: 50%;
@@ -419,4 +419,24 @@
   height: 5px;
   background-color: #b0b0b0;
   border: 2px solid rgba(0,0,0,.4);
+}
+
+
+/* 频道列表以及图片 */
+.channel-container {
+  width: 1226px;
+  height: 170px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.channel-container .channel-list{
+  height: 170px;
+  width: 234px;
+  background-color: #5f5750;
+}
+.channel-container .channel-img img{
+  width: 316px;
+  height: 170px;
 }

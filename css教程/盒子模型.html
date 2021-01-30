@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .box1{
+      width: 100px;
+      height: 200px;
+      background-color: skyblue;
+      margin-bottom: 20px;
+      padding: 10px 40px;
+    }
+
+    .box2{
+      width: 100px;
+      height: 200px;
+      background-color: grey;
+      margin: 10px 20px;
+    }
+
+
+    .box3{
+      width: 400px;
+      height: 100px;
+      background-color: #ff6700;
+      border:1px solid #aaa
+    }
+    .box4{
+      height:50px;
+      width: 200px;
+      background-color: #aaa;
+
+      /* 盒子水平居中 */
+      margin: 25px auto;
+
+      /* 文字居中 */
+      text-align: center;
+      line-height: 50px;
+
+    }
+  </style>
+
+
+
+
+</head>
+<body>
+<div class="box1">hahaha</div>
+<div class="box2">padding会影响盒子的实际大小！！！！！</div>
+
+<div class="box3">
+  <div class="box4">我是box3中的box4</div>
+</div>
+<strong>一个盒子包裹另一个盒子，当包裹盒子没有设置border时，里边盒子的设置的上边距不会起作用。</strong>
+
+
+
+
+</body>
+</html>

@@ -435,6 +435,34 @@
   height: 170px;
   width: 234px;
   background-color: #5f5750;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.channel-container .channel-list .channel-list-item{
+  width: 70px;
+  height: 82px;
+  padding: 0 3px;
+  color: #aaa;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+.channel-container .channel-list .channel-list-item:hover{
+  color: #fff;
+}
+.channel-container .channel-list .channel-list-item .itemIcon{
+  width: 70px;
+  text-align: center;
+  font-size: 24px;
+}
+.channel-container .channel-list .channel-list-item .text{
+  width: 70px;
+  margin-top: 10px;
+  text-align: center;
 }
 .channel-container .channel-img img{
   width: 316px;

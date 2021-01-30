@@ -22,3 +22,20 @@ function startSwiper(){
 }
 startSwiper()
 
+
+function showRightBar(){
+  let rightBar = document.getElementsByClassName("rightbar-container")[0]
+  let width = document.documentElement.clientWidth
+  if(width < 1400){
+    rightBar.style.display = "none"
+  }
+  window.onresize = ()=>{
+    width = document.documentElement.clientWidth
+    if(width < 1400){
+      rightBar.style.display = "none"
+    }else{
+      rightBar.style.display = "block"
+    }
+  }
+}
+showRightBar()

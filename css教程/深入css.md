@@ -60,7 +60,7 @@
 
 ​		通俗易懂地理解就是让原本霸道的块级元素在一行内显示。
 
-##### 3.2 浮动的重要特性：
+##### 3.2 浮动的重要特性
 
 - 浮动的元素会脱离标准流！！
 
@@ -112,9 +112,98 @@ position：sticky
 
 ### 四、flex布局
 
+#### 1、认识flex布局
+
+- flex-container：开启flex布局的元素
+- flex-item：flex container里面的直接子元素叫做flex-item
+
+![](../img/flex1.png)
 
 
 
+#### 2、开启flex布局
+
+- display: flex
+
+  flex-container以块级元素存在
+
+- display: inline-flex
+
+  flex-container以行内元素存在
+
+
+
+#### 3、flex布局模型
+
+- main axis 主轴
+- cross axis 交叉轴
+
+![](../img/flex2.png)
+
+
+
+#### 4、flex中的相关属性
+
+##### 4.1、flex-container的属性
+
+- flex-glow
+
+- **flex-direction**
+
+  flex-items默认都是沿着main axis（主轴）从main start开始往main end方向排布
+
+  flex-direction决定了main axis的方向，有4个取值
+
+  - row（default）
+
+  - row-reverse（主轴从右置左）
+
+  - column（主轴从上到下）
+
+  - column-reverse（主轴从下到上）
+
+    ![](../img/flex3.png)
+
+- flex-wrap
+
+- **justify-content**
+
+  justify-content决定了flex-items在main axis上的对齐方式，有以下取值
+
+  - flex-start（default）：与main start对齐
+
+  - flex-end：与main end对齐
+
+  - center：居中对齐
+
+  - space-between：flex-items之间的间距相等，两边与main start、main end对齐
+
+  - space-evenly：flex-items之间的间距相等，两边的距离和flex-items之间的间距相同
+
+  - space-around：flex-items之间的间距相等，两边的距离是lex-items之间的间距的一半
+
+    ![](../img/flex4.png)
+
+- **align-items**
+
+  align-items决定了在cross axis上的对齐方式，有以下取值
+
+  - normal（default）：和stretch效果相同
+  - stretch：当flex-items在cross axis方向的size为autu时，会自动拉伸直至填满flex-container
+  - flex-start：与cross start对齐
+  - flex-end：与cross end对齐
+  - center：居中对齐
+  - baseline：与基准线对齐（item内容的底部对齐）
+
+  ![](../img/flex5.png)
+
+- align-content
+
+
+
+
+
+##### 4.2、flex-item的属性
 
 
 

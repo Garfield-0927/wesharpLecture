@@ -146,8 +146,6 @@ position：sticky
 
 ##### 4.1、flex-container的属性
 
-- flex-glow
-
 - **flex-direction**
 
   flex-items默认都是沿着main axis（主轴）从main start开始往main end方向排布
@@ -164,7 +162,17 @@ position：sticky
 
     ![](../img/flex3.png)
 
-- flex-wrap
+- **flex-wrap**
+
+  默认情况下，所有的flex items都会在同一行显示，item一多，宽度会被压缩。
+
+  运用flex-wrap，可以在item放不下一行的时候，可以自动换行。
+
+  flex-wrap有以下取值：
+
+  - wrap
+  - no-wrap
+  - wrap-reverse
 
 - **justify-content**
 
@@ -199,11 +207,42 @@ position：sticky
 
 - align-content
 
+  决定了多行的flex items在cross axis上的对齐方式
 
-
-
+  - flex-start
+  - flex-end
+  - center
+  - space-evenly
+  - space-around
+  - space-between
 
 ##### 4.2、flex-item的属性
+
+- order
+
+  决定了item的排布顺序。默认值是0，值越小排在越前面
+
+- align-self
+
+  决定单个item在cross axis上的对齐方式
+
+  - auto（default）：遵从flex-container的align-items的值
+  - stretch、flex-start、flex-end、center、baseline
+
+- flex-grow
+
+- flex-shrink（比较少用）
+- flex-basis（比较少用）
+
+- flex
+
+  flex使flex-grow||flex-shrink||flex-basis的缩写
+
+  flex可以指定1个值，可以指定2个值，可以指定3个值
+
+  `flex:1`表示flex-grow指定为1
+
+
 
 
 
